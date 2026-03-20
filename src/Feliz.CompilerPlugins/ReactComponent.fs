@@ -93,6 +93,7 @@ module internal ReactComponentHelpers =
                     IsThisArgument = false
                     IsCompilerGenerated = true
                     Range = None
+                    IsInlineIfLambda = false
                 }
 
             let pathInfo = getPathInfo info.Args compilerInfo
@@ -539,5 +540,3 @@ type ReactMemoComponentAttribute private (?memo: MemoStrategy, ?useMemoDirective
 
 type ReactLazyComponentAttribute() =
     inherit ReactComponentAttribute(false, ?import = None, ?from = None, ?memo = None, lazy' = true)
-
-
