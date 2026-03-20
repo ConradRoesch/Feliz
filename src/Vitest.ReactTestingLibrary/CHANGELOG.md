@@ -16,6 +16,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## 1.1.0 - 2026-03-20
+
+### 🔄 Changed
+
+- Update `Feliz.CompilerPlugins` version to support `Fable.AST` to `5.0.0-rc.3` (by @MangelMaxime)
+
 ## 1.0.0 - 2025-12-10
 
 ## 1.0.0-rc.1 - 2025-09-18
