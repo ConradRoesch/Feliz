@@ -16,6 +16,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## 3.3.0 - 2026-04-17
+
+### ✨ Added
+
+- Support for `prop.spread` helper to spread object-based props #704 (by @Freymaurer)
+
+### 🐛 Fixed
+
+- Fix `useLayoutEffect` unmount calls #705 (by @Freymaurer)
+
 ## 3.2.0 - 2026-03-20
 
 ### 🔄 Changed
