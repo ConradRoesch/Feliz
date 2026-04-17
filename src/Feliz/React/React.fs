@@ -240,7 +240,6 @@ useEffect(() => {
     /// To make the effect run once (for example you subscribe once to web sockets) then provide an empty array
     /// for the dependencies: `React.useLayoutEffect(disposableEffect, [| |])`.
     /// The signature is identical to useEffect, but it fires synchronously after all DOM mutations. Use this to read layout from the DOM and synchronously re-render. Updates scheduled inside useLayoutEffect will be flushed synchronously, before the browser has a chance to paint.
-    [<ImportMember("react")>]
     static member inline useLayoutEffect(setup: unit -> (unit -> unit), ?dependencies: obj []) : unit = 
         JsInterop.emitJsExpr
             (setup, dependencies)
@@ -255,7 +254,6 @@ useLayoutEffect(() => {
     /// To make the effect run once (for example you subscribe once to web sockets) then provide an empty array
     /// for the dependencies: `React.useLayoutEffect(disposableEffect, [| |])`.
     /// The signature is identical to useEffect, but it fires synchronously after all DOM mutations. Use this to read layout from the DOM and synchronously re-render. Updates scheduled inside useLayoutEffect will be flushed synchronously, before the browser has a chance to paint.
-    [<ImportMember("react")>]
     static member inline useLayoutEffect(setup: unit -> #IDisposable, ?dependencies: obj []) : unit = 
         React.useLayoutEffect (
             (fun () -> 
