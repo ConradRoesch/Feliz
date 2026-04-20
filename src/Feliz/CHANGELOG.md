@@ -16,6 +16,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## 3.3.1 - 2026-04-20
+
+### 🐛 Fixed
+
+- Fix missing argument passing in `prop.points` #709 (by @ConradRoesch)
+
 ## 3.3.0 - 2026-04-17
 
 ### ✨ Added
